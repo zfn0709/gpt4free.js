@@ -42,8 +42,8 @@ class BlackBoxProvider extends Provider {
       visitFromDelta: options.visitFromDelta || null,
     };
 
-    const response = await fetch("https://www.blackbox.ai/api/chat", {
-      headers: baseHeaders("https://www.blackbox.ai/api/chat"),
+    const response = await fetch("https://api.blackbox.ai/api/chat", {
+      headers: baseHeaders("https://api.blackbox.ai/api/chat"),
       body: JSON.stringify(body),
       method: "POST",
       mode: "cors",
